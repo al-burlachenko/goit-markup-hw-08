@@ -77,4 +77,16 @@
 <symbol id="icon-name" viewBox="0 0 32 32">
 <path d="M16 16c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm0 4c-5.34 0-16 2.68-16 8v2c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-2c0-5.32-10.66-8-16-8z"/></symbol>
 </defs>
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-menu_menu" viewBox="0 0 48 32">
+<path d="M0 5.332v-5.337h48.024v5.337h-48.024zM0 18.67h48.024v-5.335h-48.024v5.335zM0 32.011h48.024v-5.337h-48.024v5.337z"></path>
+</symbol>
+<symbol id="icon-menu_close" viewBox="0 0 32 32">
+<path d="M31.459 3.168l-3.168-3.168-12.562 12.56-12.56-12.56-3.168 3.168 12.56 12.56-12.56 12.562 3.168 3.168 12.56-12.562 12.562 12.562 3.168-3.168-12.562-12.562 12.562-12.56z"></path>
+</symbol>
+</defs>
+</svg>
+
 </svg>

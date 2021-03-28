@@ -4,10 +4,65 @@
 
 .section__items {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  outline: 1px solid red;
+
+  margin-right: -30px;
+  margin-top: -30px;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.section__item {
+  // flex-basis: calc(100%/4 - 25px);
+  // display: inline-flex;
+  margin-right: 30px;
+  margin-top: 30px;
+
+  outline: 1px solid navy;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.item__title {
+  @extend %title-font;
+  text-align: left;
+  margin-top: 30px;
+
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet), screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .section__text {
+  display: block;
   margin-top: 10px;
   line-height: 1.71;
   font-weight: 400;
@@ -16,44 +71,37 @@
   @extend %light-text;
 }
 
-.section__item {
-  flex-basis: calc(100%-4 * 270px);
-  margin-right: 25px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
-}
-
 .section__icon {
-  display: block;
+  display: flex;
   width: 70px;
   height: 70px;
   color: $color-inactive;
 }
 
 .section__thumb {
-  padding: 25px 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px 100px;
   background-color: $color-light;
 }
 
 /* MIDDLE-SECOND-PART  */
 
-.section__within-gap {
+.section__part {
+  
   margin-top: 95px;
-}
 
-.item__title {
-  margin-top: 30px;
-
-  @extend %title-font;
-  text-align: left;
+  @media screen and (max-width:$desktop ) {
+    display: none;
+  }
 }
 
 .gallery {
   display: flex;
-  justify-content: space-between;
-  flex-basis: calc (100%-3 * 370);
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 4 - 30px);
 
   margin-right: -30px;
   margin-top: 50px;

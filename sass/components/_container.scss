@@ -1,6 +1,32 @@
+@import "../utils/variables";
+
 .container {
-    width: 1200px;
-    padding: 94px 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 15px; 
+  outline: 1px solid blueviolet;
+
+@media screen and (min-width: $mobile) {
+  width: $mobile;
+}
+
+@media screen and (min-width: $tablet) {
+  width: $tablet;
+}
+
+@media screen and (min-width: $desktop) {
+  width: $desktop;
+  padding: 94px 15px;
+}
+
+}
+
+@media screen and (min-width: $mobile) {
+}
+
+
+@media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $desktop) {
+}
