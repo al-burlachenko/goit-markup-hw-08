@@ -1,0 +1,18 @@
+@import "../utils/variables";
+@import "../utils/placeholders";
+
+.logo {
+  @extend %logo;
+  &--opp {
+    color: $color-primary;
+  }
+  &--current {
+    color: $color-accent;
+  }
+}
+
+.nav__logo {
+  $color-logo: #000000;
+  color: $color-logo;
+  margin-right: 93px;
+}

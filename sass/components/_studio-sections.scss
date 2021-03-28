@@ -1,0 +1,31 @@
+@import '../utils/variables';
+@import "../utils/placeholders";
+
+.main-page {
+  color: $color-black;
+  @extend %title-links-font; 
+}
+
+.section__title {
+  @extend %section__title;
+}
+
+.section:first-child {
+    max-width: 1600px;
+    background-color: #2f303a;
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url("../images/background-img.jpg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  
+  .section:nth-child(n + 2) {
+    background-color: $color-primary; 
+  }
+  
+  .section:nth-child(n + 3) {
+    background-color: $color-light;
+  }

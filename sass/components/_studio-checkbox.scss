@@ -1,0 +1,50 @@
+@import "../utils/variables";
+@import "../utils/placeholders";
+
+.checkbox-submit {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  align-items: center;
+  justify-content: center;
+  color: $color-dark;
+
+  @extend %light-text;
+
+  &__checkbox {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.checkbox-submit__checkbox:checked ~ .checkbox-submit__icon {
+  background-color: $color-accent;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $color-accent;
+}
+
+.checkbox-submit__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 1.78px solid $color-black;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+/* название стиля отличается от предыдущей версии проекта без scss  */
+.checkbox-submit_underline-link {
+  text-decoration: underline;
+}

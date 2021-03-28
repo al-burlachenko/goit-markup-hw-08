@@ -1,0 +1,191 @@
+// основной шрифт 
+// font-size: 14px;
+// line-height: 1.17;
+
+// font-family: "Roboto", "Verdana", "Tahoma", sans-serif; у всех, кроме лого 
+
+// @import "../utils/placeholders";
+
+// .logo +
+%logo {
+  font-size: 26px;
+  line-height: 1.17;
+  font-weight: 700;
+  font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+// .hero__title  +
+%hero__title {
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+  
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  }
+
+  // .hero__link +
+  %hero__link {
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+
+    font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  }
+
+
+//  .gallery__title .gallery__caption ++
+// .item__title, .footer__title ++
+%title-font {
+  font-size: 14px;
+  line-height: 1.17;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+
+// .main-page, .portfolio-page
+// .contacts-list__link,  +
+// .nav-list__link +
+%title-links-font{
+  font-size: 14px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+// .thumb-overlay__text +
+%thumb-overlay__text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+
+    font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+//.section__title +
+%section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+
+// .modal__title +
+%modal__title {
+  font-size: 20px;
+  line-height: 1.17;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+
+// .modal__input, .modal__memo, .modal__label +++
+%modal-font {
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+
+    font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+
+// .footer-link,+
+// .modal-link +
+%link-btn-text{
+font-size: 16px;
+line-height: 1.88;
+font-weight: 700;
+letter-spacing: 0.06em;
+
+text-align: center;
+
+font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+// .filter__link +
+%filter__link {
+  font-size: 16px;
+  line-height: 1.63;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+
+  text-align: center;  
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+// .cardset__data-text +
+%cardset__data-text {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+// +
+%cardset__data-title {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+// .section__text, .checkbox-submit, ++
+// .footer-contacts, .footer__address ++
+%light-text{
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+//+
+%grid-cardset__text {
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}
+
+// +
+%grid-cardset__title {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+}

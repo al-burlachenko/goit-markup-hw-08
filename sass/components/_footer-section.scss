@@ -1,0 +1,50 @@
+@import "../utils/variables";
+@import "../utils/placeholders";
+
+.footer {
+  background-color: $color-footerbg;
+  font-weight: 400;
+  color: $color-primary;
+  &__link {
+    color: $color-primary;
+    @extend %link-btn-text;
+  }
+
+  &__address {
+    @extend %light-text;
+    margin-top: 20px;
+  }
+
+  &__part {
+    margin-right: 70px;
+  }
+
+  &__title {
+    color: $color-primary;
+    @extend %title-font;
+    text-align: left;
+  }
+
+  &__label {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.footer-layout {
+  padding: 60px 15px;
+  display: flex;
+}
+
+.footer-contacts {
+  @extend %light-text;
+  margin-top: 9px;
+  color: $color-black;
+  opacity: 0.6;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

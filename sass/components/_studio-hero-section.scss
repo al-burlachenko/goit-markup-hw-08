@@ -1,0 +1,23 @@
+@import "../utils/variables";
+@import "../utils/placeholders";
+
+.hero {
+  color: $color-primary;
+  padding: 200px 252px;
+
+  &__link {
+    color: $color-primary;
+    background-color: $color-accent;
+    @extend %hero__link;
+
+    display: block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin: 30px auto;
+  }
+
+  &__title {
+    display: block;
+    @extend %hero__title;
+  }
+}

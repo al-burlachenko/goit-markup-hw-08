@@ -1,0 +1,38 @@
+@import "../utils/variables";
+@import "../utils/placeholders";
+
+.portfolio-page {
+  color: $color-black;
+  @extend %title-links-font;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  top: -1px;
+
+  &__item {
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: $color-light;
+
+    display: inline-block;
+  }
+}
+
+.filter__link {
+  color: $color-black;
+  display: inline-block;
+  padding: 7px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %filter__link;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    background-color: $color-accent;
+  }
+}
