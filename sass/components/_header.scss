@@ -1,6 +1,8 @@
 @import "../utils/variables";
 @import "../utils/placeholders";
 
+// header 
+
 .header {
   background-color: $color-primary;
   position: sticky;
@@ -15,12 +17,12 @@
     min-height: 80px;
     padding: 0px 15px;
     position: static;
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $tablet) {
       top: 0;
       left: 0;
-      width: 100%;
       height: 100%;
     }
+    
   }
 }
  
@@ -40,50 +42,24 @@
   align-items: center;
 }
 
-.header__menu {
-  @media screen and (max-width: 767px) {
-    background-color: $color-primary;
-    display: none;
-    position: absolute;
-    top: 100%;
-   
-    left: 0;
-    width: 100%;
 
-    // height: 100%;
 
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    outline: 4px solid pink;
-    
-    // &::before {
-    //  content: " "; 
-    // }
-
-    &.is-open {
-      display: none;
-      z-index: 2;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    height: 100%;
-  }
-  @media screen and (min-width: $desktop) {
-    justify-content: space-between;
-  }
-}
+// header__menu::before {
+//   @media screen and (max-width:$tablet) {
+//     content: " ";
+//     background-color: $color-primary;
+//   }
+// }
 
 // .contacts-list__item 
 
 .nav-list {
   display: flex;
-  flex-direction: column;
   align-items: center;
 
   @media screen and (max-width: 767px) {
+    flex-direction: column;
+
     margin-bottom: 60px;
     & .item:not(:last-child) {
       margin-bottom: 40px;
@@ -92,6 +68,7 @@
 
   @media screen and (min-width: $tablet) {
     flex-direction:row;
+    display: inline-flex;
   }
   @media screen and (min-width: $tablet){
     // flex-direction:row;
@@ -100,12 +77,17 @@
   &__item {
     display: flex;
     position: relative;
-    align-items: baseline;
+    // align-items: baseline;
     margin-right: 50px;
   }
   &__item:last-of-type {
     margin-right: 0px;
   }
+}
+
+.nav-list__item {
+  display: flex;
+  align-items: center;
 }
 
 .nav__item:last-child {
@@ -119,13 +101,17 @@
   color: $color-black;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  margin-top: 32px;
   @media screen and (min-width: $tablet) {
     font-size: 14px;
+    margin-top: 0px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;
+    margin-top: 0;
+  //  margin: auto;
+  //  align-items: center;
   }
 
   &:hover,
@@ -134,25 +120,28 @@
   }
 }
 
-.nav-list__link {
-  margin-top: 32px;
-  @media screen and (min-width: $tablet) {
-    margin-top: 0px;
-  }
+// .nav-list__link {
+  
+//   @media screen and (min-width: $tablet) {
+    
+//   }
 
-  @media screen and (min-width: $desktop) {
-    margin-top: 0px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+    
+//   }
+// }
+
+// contact-list, contact-list__item 
 
 .contacts-list {
   display: flex;
   flex-wrap: wrap;
   // position: absolute;
   justify-content: space-between; 
-  flex-direction : column;
+  
   @media screen and (max-width: 767px) {
     // display: block;
+    flex-direction : column;
   }
 
   @media screen and (min-width: $tablet) { 
@@ -164,9 +153,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 305px;
+    margin-left: auto;
     flex-wrap: nowrap;
     flex-direction:row;
+    display: inline-flex;
   }
 
   &__item {
@@ -178,6 +168,7 @@
     margin-right: 0px;
     @media screen and (min-width: $desktop) { 
       margin-right: 30px;
+      display: flex;
     }
   } 
 
@@ -193,6 +184,8 @@
     }
   }
 }
+
+// contacts-list__link
 
 .contacts-list__link {
   @extend %title-links-font;
@@ -247,6 +240,7 @@
   }
 }
 
+// .header__menu 
 
 .header__menu {
   display:flex;
@@ -256,10 +250,10 @@
   // outline: 1px solid red;
 
   @media screen and (min-width: 765px) {
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    // bottom: 0;
+    // right: 0;
+    // width: 100%;
+    // height: 100%;
 
     // flex-direction: column;
   }
@@ -271,6 +265,44 @@
     
   }
   
+}
+
+.header__menu {
+  @media screen and (max-width: 767px) {
+    background-color: $color-primary;
+    display: none;
+    position: absolute;
+    top: 100%;
+   
+    left: 0;
+    width: 100%;
+
+    // height: 100%;
+
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    outline: 4px solid pink;
+    
+    // &::before {
+    //  content: " "; 
+    // }
+
+  &.is-open {
+      display: flex;
+      z-index: 2;
+  }
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    height: 100%;
+    position: static;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    // align-items: center;
+  }
 }
 
 
@@ -300,3 +332,5 @@
     display: none;
   }
 }
+
+// 
