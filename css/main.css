@@ -551,16 +551,15 @@ img {
   }
 }
 
-.header__menu {
+.button {
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   outline: 1px solid red;
 }
 
@@ -575,6 +574,41 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .header__menu.is-open {
+    display: none;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .nav-list {
@@ -672,6 +706,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -704,10 +740,7 @@ img {
 }
 
 .contacts-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+  display: block;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -799,38 +832,24 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__menu {
-    background-color: #ffffff;
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .header__menu.is-open {
-    display: block;
-    z-index: 777;
-  }
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 1px solid red;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (mix-width: 765px) {
   .header__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__menu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1009,6 +1028,25 @@ img {
   color: #212121;
 }
 
+.section:first-child {
+  max-width: 1600px;
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../images/background-img.jpg");
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../images/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 auto;
+}
+
+.section:nth-child(n + 2) {
+  background-color: #ffffff;
+}
+
+.section:nth-child(n + 3) {
+  background-color: #f5f4fa;
+}
+
 .logo {
   font-size: 26px;
   line-height: 1.19;
@@ -1150,6 +1188,9 @@ img {
 .hero {
   color: #ffffff;
   padding: 200px 252px;
+  margin-left: 0px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero__link {
@@ -1482,7 +1523,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .bottom-cardset__item {
-    width: calc(100%);
+    width: 100%;
   }
 }
 
@@ -1830,6 +1871,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;

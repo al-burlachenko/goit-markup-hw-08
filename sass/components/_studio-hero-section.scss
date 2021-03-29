@@ -4,6 +4,11 @@
 .hero {
   color: $color-primary;
   padding: 200px 252px;
+  // max-width: 576px;
+  margin-left: 0px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 
   &__link {
     color: $color-primary;
