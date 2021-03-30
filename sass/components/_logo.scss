@@ -3,12 +3,18 @@
 
 .logo {
   @extend %logo;
-  &--opp {
-    color: $color-primary;
+  
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
   }
+
   &--current {
     color: $color-accent;
   }
+}
+
+.footer__logo {
+  color: $color-primary;
 }
 
 .nav__logo {

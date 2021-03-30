@@ -5,24 +5,17 @@
   background-color: $color-footerbg;
   font-weight: 400;
   color: $color-primary;
+  
   &__link {
     color: $color-primary;
     @extend %link-btn-text;
-  }
-
-  &__address {
-    @extend %light-text;
-    margin-top: 20px;
-  }
-
-  &__part {
-    margin-right: 70px;
   }
 
   &__title {
     color: $color-primary;
     @extend %title-font;
     text-align: left;
+    
   }
 
   &__label {
@@ -30,12 +23,114 @@
     left: 0;
     position: absolute;
   }
+
+  .footer__address {
+    @extend %light-text;
+    margin-top: 20px;
+  }
+}
+
+.footer__part {
+  margin-right: 0px;
+  // display: flex;
+
+  @media screen and (min-width: $mobile) {
+    margin-top: 60px;
+  }
+  
+  
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    align-items: center;
+    margin-right: 70px;
+  }
+  
+}
+
+.footer__part:first-of-type {
+  margin-top: 20px;
+
+  @media screen and (min-width: $mobile) {
+  }
+  
+  
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    margin-top: 0px;
+    margin-right: 70px;
+  }
+
 }
 
 .footer-layout {
   padding: 60px 15px;
   display: flex;
+  // flex-direction: column;
+  
+
+  @media screen and (max-width: $pre-tablet) {
+    flex-direction: column;
+  }
+  
+  
+  @media screen and (min-width: $tablet) {
+    padding: 60px 90px 60px 76px;
+    display: flex;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
+
+.footer__form {
+  display: flex;
+  margin-left: 93px;
+
+  
+
+  @media screen and (max-width: $pre-mobile) {
+    display: flex;
+  }
+  
+  
+  @media screen and (min-width: $tablet) {
+  }
+  
+  @media screen and (min-width: $desktop) {
+  }
+
+}
+
+
+.footer-link {
+  color: $color-primary;
+  background-color: $color-accent;
+  @extend %link-btn-text; 
+  
+  display: flex;
+  
+  
+  padding: 10px 28px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  justify-content: center;
+  align-items: center;
+} 
+
+
 
 .footer-contacts {
   @extend %light-text;
@@ -47,4 +142,32 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+
+.footer-link__icon {
+  width: 24px;
+  height: 24px;
+
+  fill: $color-primary;
+  margin-left: 10px;
+}
+
+
+
+.footer__input {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding-left: 16px;
+  background: $color-footerbg;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  color: $color-primary;
+  opacity: 0.3;
+  display: flex;
+  // flex-wrap: wrap;
 }

@@ -1,13 +1,13 @@
 @import '../utils/variables';
 @import "../utils/placeholders";
 
-.footer-link,
-.modal-link {
+.footer-link {
   color: $color-primary;
   background-color: $color-accent;
   @extend %link-btn-text; 
   
   display: flex;
+  
   
   padding: 10px 28px;
   width: 200px;

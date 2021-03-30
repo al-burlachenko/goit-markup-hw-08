@@ -84,30 +84,4 @@
 
 // Portfolio-forms css
 
-.footer-link__icon {
-  width: 24px;
-  height: 24px;
 
-  fill: $color-primary;
-  margin-left: 10px;
-}
-
-.footer__form {
-  display: flex;
-  margin-left: 93px;
-}
-
-.footer__input {
-  box-sizing: border-box;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  padding-left: 16px;
-  background: $color-footerbg;
-  margin-top: auto;
-  margin-bottom: auto;
-
-  color: $color-primary;
-  opacity: 0.3;
-}
