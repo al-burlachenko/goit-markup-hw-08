@@ -16,47 +16,64 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" /> 
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="portfolio-page">
     <header class="header bordered">
       <div class="header-layout container">
-        <nav class="nav">
-          <a href="./index.html" class="logo nav__logo"
-            ><span class="logo logo--current">Web</span>Studio</a
-          >
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студия</a>
+        <a href="./index.html" class="logo nav__logo"
+          ><span class="logo logo--current">Web</span>Studio</a
+        >
+        <!-- <div></div> -->
+        <div class="header__menu">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="./index.html" class="nav-list__link "
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="./portfolio.html" class="nav-list__link link--current">Портфолио</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                <svg class="contacts-list__icon" width="16px" height="12px">
+                  <use href="./images/portfolio-cards/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link link--current">Портфолио</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Контакты</a>
+
+            <li class="contacts-list__item">
+              <a href="tel:+380961111111" class="contacts-list__link">
+                <svg class="contacts-list__icon" width="10px" height="16px">
+                  <use href="./images/portfolio-cards/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a href="mailto:info@devstudio.com" class="contacts-list__link">
-              <svg class="contacts-list__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link">
-              <svg class="contacts-list__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button
+          class="header_menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use
+              class="menu-toggle__icon"
+              href="./images/portfolio-cards/icons.svg#icon-menu_menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -88,7 +105,16 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-1.jpg" alt="image-1" class="grid-cardset__img" />
+                  <img
+                    src="./images/portfolio-cards/img-2-1.jpg" 
+                    
+                    srcset="
+                        ./images/portfolio-cards/img-2-1.jpg      1x,
+                        ./images/portfolio-cards/img-2-1@2x.jpg   2x"
+
+                    alt="image-1"
+                    class="grid-cardset__img"
+                  />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -110,7 +136,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-2.jpg" alt="image-2" />
+                  <img src="./images/portfolio-cards/img-2-2.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-2.jpg      1x,
+                        ./images/portfolio-cards/img-2-2@2x.jpg   2x"
+
+                  alt="image-2" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -124,7 +156,7 @@
 
                 <div class="grid-cardset__data">
                   <h2 class="grid-cardset__title">
-                  Постер New Orlean vs Golden Star
+                    Постер New Orlean vs Golden Star
                   </h2>
                   <p class="grid-cardset__text">Дизайн</p>
                 </div>
@@ -134,7 +166,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-3.jpg" alt="image-3" />
+                  <img src="./images/portfolio-cards/img-2-3.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-3.jpg      1x,
+                        ./images/portfolio-cards/img-2-3@2x.jpg   2x"
+
+                  alt="image-3" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -156,7 +194,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-4.jpg" alt="image-4" />
+                  <img src="./images/portfolio-cards/img-2-4.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-4.jpg      1x,
+                        ./images/portfolio-cards/img-2-4@2x.jpg   2x"
+
+                  alt="image-4" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -178,7 +222,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-5.jpg" alt="image-5" />
+                  <img src="./images/portfolio-cards/img-2-5.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-5.jpg      1x,
+                        ./images/portfolio-cards/img-2-5@2x.jpg   2x"
+
+                  alt="image-5" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -200,7 +250,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-6.jpg" alt="image-6" />
+                  <img src="./images/portfolio-cards/img-2-6.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-6.jpg      1x,
+                        ./images/portfolio-cards/img-2-6@2x.jpg   2x"
+
+                  alt="image-6" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -213,7 +269,9 @@
                 </div>
 
                 <div class="grid-cardset__data">
-                  <h2 class="grid-cardset__title">Inspiration has no Borders</h2>
+                  <h2 class="grid-cardset__title">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="grid-cardset__text">Веб-сайт</p>
                 </div>
               </a>
@@ -222,7 +280,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-7.jpg" alt="image-7" />
+                  <img src="./images/portfolio-cards/img-2-7.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-7.jpg      1x,
+                        ./images/portfolio-cards/img-2-7@2x.jpg   2x"
+
+                  alt="image-7" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -244,7 +308,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-8.jpg" alt="image-8" />
+                  <img src="./images/portfolio-cards/img-2-8.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-8.jpg      1x,
+                        ./images/portfolio-cards/img-2-8@2x.jpg   2x"
+
+                  alt="image-8" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -266,7 +336,13 @@
             <li class="grid-cardset__item">
               <a href="" class="grid-cardset__link">
                 <div class="card-thumb">
-                  <img src="./images/img-2-9.jpg" alt="image-9" />
+                  <img src="./images/portfolio-cards/img-2-9.jpg" 
+                  
+                  srcset="
+                        ./images/portfolio-cards/img-2-9.jpg      1x,
+                        ./images/portfolio-cards/img-2-9@2x.jpg   2x"
+
+                  alt="image-9" />
 
                   <div class="thumb-overlay">
                     <p class="thumb-overlay__text">
@@ -293,7 +369,7 @@
     <footer class="footer">
       <div class="container footer-layout">
         <div class="footer__part">
-          <a href="#" class="logo logo--opp"
+          <a href="#" class="logo footer__logo"
             ><span class="logo logo--current">Web</span>Studio</a
           >
           <address class="footer__address">
@@ -315,11 +391,10 @@
 
         <div class="footer__part">
           <h2 class="footer__title">Присоединяйтесь</h2>
-          <!-- social-block  -->
-          <div class="social-block">
+
+          <div class="social-block social-block--footer">
             <ul class="social">
               <li class="social__item">
-                <!-- icon-instagram -->
                 <a
                   href="#"
                   class="social__link social__link--opp"
@@ -332,7 +407,6 @@
                 </a>
               </li>
               <li class="social__item">
-                <!-- twitter -->
                 <a
                   href="#"
                   class="social__link social__link--opp"
@@ -345,7 +419,6 @@
                 </a>
               </li>
               <li class="social__item">
-                <!-- facebook -->
                 <a
                   href="#"
                   class="social__link social__link--opp"
@@ -358,7 +431,6 @@
                 </a>
               </li>
               <li class="social__item">
-                <!-- linkedin -->
                 <a
                   href="#"
                   class="social__link social__link--opp"
@@ -372,7 +444,6 @@
               </li>
             </ul>
           </div>
-          <!-- social-block-end  -->
         </div>
 
         <form class="footer__form">
@@ -398,6 +469,75 @@
         </form>
       </div>
     </footer>
-  
+    
+    <div class="header__mobile-menu js-menu-container" id="mobile-menu">
+      <button class="header_menu-button js-close-menu">
+        <svg width="18.67px" height="18.67px">
+          <use
+            class="menu-toggle__icon"
+            href="./images/portfolio-cards/icons.svg#icon-menu_close"
+          ></use>
+        </svg>
+      </button>
+
+      <div class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__link link--current"
+              >Студия</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <a href="mailto:info@devstudio.com" class="contacts-list__link">
+            <svg class="contacts-list__icon" width="16px" height="12px">
+              <use href="./images/portfolio-cards/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+
+        <li class="contacts-list__item">
+          <a href="tel:+380961111111" class="contacts-list__link">
+            <svg class="contacts-list__icon" width="10px" height="16px">
+              <use href="./images/portfolio-cards/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link" >Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

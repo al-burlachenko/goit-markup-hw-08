@@ -1,7 +1,18 @@
 @import "../utils/variables";
 
 .social-block {
-  margin-top: 16px;
+  // margin-top: 16px;
+ 
+  @media screen and (max-width: $pre-tablet) {
+    width: 206px;
+
+  }
+  
+  @media screen and (min-width: $tablet) {
+  }
+  
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 .social {

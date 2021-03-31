@@ -11,18 +11,6 @@
   z-index: 1;
   // min-height: 60px;
 
-  @media screen and (min-width: $mobile) {
-    // min-height: 60px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    // min-height: 80px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    // min-height: 80px;
-  }
-
   &-layout {
     position: static;
 
@@ -34,7 +22,6 @@
     @media screen and (min-width: $tablet) {
       min-height: 80px;
       display: flex;
-      outline: 1px solid yellowgreen;
     }
     @media screen and (min-width: $desktop) {
       min-height: 80px;
@@ -66,7 +53,6 @@
 .nav-list {
   display: flex;
   justify-items: center;
-  outline: 1px solid blue;
   @media screen and (max-width: 767px) {
     flex-direction: column;
     // margin-bottom: 60px;
@@ -97,7 +83,7 @@
   // position: relative;
   display: flex;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $pre-tablet) {
     margin-top: 32px;
   }
 
@@ -117,6 +103,12 @@
 
   @media screen and (min-width: $desktop) {
     // margin-right: 0px;
+  }
+}
+
+.nav-list__item:first-of-type {
+  @media screen and (max-width: $pre-tablet) {
+    margin-top: 0px;
   }
 }
 
@@ -151,8 +143,7 @@
 .contacts-list {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid tomato;
-  @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     margin-top: 302px;
     flex-direction: column;
     // flex-wrap: wrap;
@@ -175,7 +166,6 @@
   &__item {
     display: block;
     align-items: baseline;
-    
 
     @media screen and (max-width: $tablet) {
       margin-top: 32px;
@@ -189,6 +179,12 @@
       margin-top: 0px;
       margin-right: 30px;
       display: flex;
+    }
+  }
+
+  .contacts-list__item:first-of-type {
+    @media screen and (max-width: $pre-tablet) {
+      margin-top: 0px;
     }
   }
 
@@ -275,7 +271,6 @@
 }
 
 .header__mobile-menu {
-  outline: 3px solid pink;
   @media screen and (max-width: 767px) {
     position: fixed;
     bottom: 0;
@@ -291,26 +286,21 @@
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     align-items: center;
-    // display: flex;
     justify-content: flex-start;
     flex-direction: column;
     background-color: $color-primary;
     display: none;
 
     text-align: center;
-    outline: 4px solid pink;
 
     &.is-open {
       transform: translateY(0);
       transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
-      display: flex;
+      display: block;
       z-index: 2;
     }
-
-    .nav-list {
-      // display: block;
-    }
   }
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -318,7 +308,6 @@
 
 .header_menu-button {
   display: flex;
-  outline: 1px solid red;
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -327,20 +316,28 @@
   height: 40px;
 
   &.js-close-menu {
-    // position: absolute;
     padding: 11px;
-    // top: 0;
-    // left: 0;
-    // transform: translate(-50%, -50%);
 
-  }
-  &.js-open-menu {
-    padding: 12px 8px;
-    display: flex;
-    // margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transform: translate(-50%,50%);
+
     &:hover,
     &:focus {
       fill: $color-accent;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+  &.js-open-menu {
+    padding: 12px 8px;
+    display: flex;
+    // fill: $color-accent;
+    
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @media screen and (min-width: $tablet) {
@@ -348,3 +345,25 @@
     }
   }
 }
+
+
+.mobile-social {
+  display: flex;
+  margin-top: 64px;
+
+  &__item{
+    border-right: 1px solid rgba(33,33,33,0.2);
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+} 
+
+.mobile-social__item {
+  @extend %mobile-social-font; 
+}
+
+.mobile-social__link {
+  color: $color-accent; 
+}
+
+

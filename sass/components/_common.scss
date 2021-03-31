@@ -1,7 +1,7 @@
 @import '../utils/variables';
 @import "../utils/placeholders";
 
-.footer-link {
+.modal-link {
   color: $color-primary;
   background-color: $color-accent;
   @extend %link-btn-text; 

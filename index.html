@@ -24,53 +24,56 @@
           ><span class="logo logo--current">Web</span>Studio</a
         >
         <!-- <div></div> -->
-                  <div class="header__menu">
-            <nav class="nav">
-              <ul class="nav-list">
-                <li class="nav-list__item">
-                  <a href="./index.html" class="nav-list__link link--current"
-                    >Студия</a
-                  >
-                </li>
-                <li class="nav-list__item">
-                  <a href="./portfolio.html" class="nav-list__link"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="nav-list__item">
-                  <a href="#" class="nav-list__link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-
-            <ul class="contacts-list">
-              <li class="contacts-list__item">
-                <a href="mailto:info@devstudio.com" class="contacts-list__link">
-                  <svg class="contacts-list__icon" width="16px" height="12px">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
+        <div class="header__menu">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="./index.html" class="nav-list__link link--current"
+                  >Студия</a
                 >
               </li>
-
-              <li class="contacts-list__item">
-                <a href="tel:+380961111111" class="contacts-list__link">
-                  <svg class="contacts-list__icon" width="10px" height="16px">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
+              <li class="nav-list__item">
+                <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Контакты</a>
               </li>
             </ul>
-          </div>
-          <button class="header_menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="24" height="16"> 
-                <use class="menu-toggle__icon" href="./images/icons.svg#icon-menu_menu"></use>
-            </svg>
-        </button>
+          </nav>
+
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                <svg class="contacts-list__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+
+            <li class="contacts-list__item">
+              <a href="tel:+380961111111" class="contacts-list__link">
+                <svg class="contacts-list__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
-        
-      
+        <button
+          class="header_menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use
+              class="menu-toggle__icon"
+              href="./images/icons.svg#icon-menu_menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -186,8 +189,11 @@
           <ul class="bottom-cardset">
             <li class="bottom-cardset__item">
               <img
-                src="./images//img_1_1.jpg"
+                src="./images/our-team/img_1_1.jpg"
                 alt="Product Designer"
+                srcset="
+                        ./images/our-team/img_1_1.jpg      1x,
+                        ./images/our-team/img_1_1@2x.jpg   2x"
                 title="Product Designer"
                 class="bottom-cardset__img"
               />
@@ -258,8 +264,11 @@
 
             <li class="bottom-cardset__item">
               <img
-                src="./images//img_1_2.jpg"
+                src="./images/img_1_2.jpg"
                 alt="Frontend Developer"
+                srcset="
+                        ./images/our-team/img_1_2.jpg      1x,
+                        ./images/our-team/img_1_2@2x.jpg   2x"
                 title="Frontend Developer"
                 class="bottom-cardset__img"
               />
@@ -329,8 +338,11 @@
 
             <li class="bottom-cardset__item">
               <img
-                src="./images//img_1_3.jpg"
+                src="./images/img_1_3.jpg"
                 alt="Marketing"
+                srcset="
+                        ./images/our-team/img_1_3.jpg      1x,
+                        ./images/our-team/img_1_3@2x.jpg   2x"
                 title="Marketing"
                 class="bottom-cardset__img"
               />
@@ -402,6 +414,9 @@
               <img
                 src="./images//img_1_4.jpg"
                 alt="UI Designer"
+                srcset="
+                        ./images/our-team/img_1_4.jpg      1x,
+                        ./images/our-team/img_1_4@2x.jpg   2x"
                 title="UI Designer"
                 class="bottom-cardset__img"
               />
@@ -587,7 +602,7 @@
         <div class="footer__part">
           <h2 class="footer__title">Присоединяйтесь</h2>
 
-          <div class="social-block">
+          <div class="social-block social-block--footer">
             <ul class="social">
               <li class="social__item">
                 <a
@@ -735,14 +750,16 @@
       </div>
     </div>
 
-    <!-- is-open убрать -->
-    <div class="header__mobile-menu js-menu-container" id="mobile-menu" >
+    <div class="header__mobile-menu js-menu-container" id="mobile-menu">
       <button class="header_menu-button js-close-menu">
         <svg width="18.67px" height="18.67px">
-            <use class="menu-toggle__icon" href="./images/icons.svg#icon-menu_close"></use>
+          <use
+            class="menu-toggle__icon"
+            href="./images/icons.svg#icon-menu_close"
+          ></use>
         </svg>
-    </button>
-      
+      </button>
+
       <div class="nav">
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -751,9 +768,7 @@
             >
           </li>
           <li class="nav-list__item">
-            <a href="./portfolio.html" class="nav-list__link"
-              >Портфолио</a
-            >
+            <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
           </li>
           <li class="nav-list__item">
             <a href="#" class="nav-list__link">Контакты</a>
@@ -781,9 +796,21 @@
         </li>
       </ul>
 
-      
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link" >Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="#" class="mobile-social__link">LinkedIn</a>
+        </li>
+      </ul>
     </div>
-
 
     <script src="./js/modal.js"></script>
     <!-- <script src="./js/subscribe.js"></script> -->
