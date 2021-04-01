@@ -3,13 +3,21 @@
 
 .hero {
   color: $color-primary;
-  padding: 200px 252px;
+  
   // max-width: 576px;
   margin-left: 0px auto;
   background-size: cover;
   background-repeat: no-repeat;
 
-  outline: 1px solid red;
+  padding: 118px 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 118px 204px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    padding: 200px 252px;
+  }
 
   &__link {
     color: $color-primary;
@@ -25,5 +33,6 @@
   &__title {
     display: block;
     @extend %hero__title;
+
   }
 }

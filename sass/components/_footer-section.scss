@@ -37,7 +37,6 @@
 
 .footer__part {
   margin-right: 0px;
-  // display: flex;
 
   @media screen and (max-width: $pre-tablet) {
     margin-top: 60px;
@@ -55,7 +54,6 @@
 }
 
 .footer__part:first-of-type {
-  // margin-top: 20px;
   margin-top: 0px;
 
   @media screen and (min-width: $mobile) {
@@ -72,7 +70,6 @@
 }
 
 .footer__part:last-of-type {
-  // margin-top: 20px;
   @media screen and (min-width: $mobile) {
   }
 
@@ -87,8 +84,6 @@
 
 .footer-layout {
   padding: 60px 15px;
-  // display: flex;
-  // flex-direction: column;
 
   @media screen and (max-width: $pre-tablet) {
     display: block;
@@ -107,12 +102,8 @@
 }
 
 .footer__form {
-  // display: flex;
-  // margin-left: 93px;
-
   @media screen and (max-width: $pre-tablet) {
     display: block;
-    // text-align: center;
   }
 
   @media screen and (min-width: $tablet) {
@@ -167,7 +158,6 @@
   @media screen and (min-width: $desktop) {
     margin-left: 12px;
     margin-top: auto;
-    margin-bottom: auto;
   }
 }
 
@@ -205,8 +195,6 @@
   color: $color-primary;
   opacity: 0.3;
   display: flex;
-  // flex-wrap: wrap;
-
   @media screen and (max-width: $pre-tablet) {
     max-width: 450px;
     margin-top: 20px;
@@ -225,9 +213,6 @@
 }
 
 .footer__label {
-  // top: 0;
-  // left: 0;
-  // position: absolute;
 
   @media screen and (max-width: $pre-tablet) {
     margin-top: 60px;

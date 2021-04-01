@@ -11,7 +11,6 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -43,6 +42,19 @@
   border-radius: 4px;
 
   visibility: visible;
+
+  // min-width: fit-content;
+
+  width: 450px;
+  @media screen and (min-width: $tablet) {
+
+}
+
+@media screen and (min-width: $desktop) {
+  width: 528px;
+}
+
+
 }
 
 .modal-close {
@@ -65,10 +77,10 @@
     height: 11px;
   }
 
-  &__icon:hover, 
-  &__icon:focus {
-    fill: $color-accent;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover  &__icon,
+  &:focus  &__icon  {
+    color: $color-accent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
