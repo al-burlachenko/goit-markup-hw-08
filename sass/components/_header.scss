@@ -282,7 +282,7 @@
 .header__mobile-menu {
   @media screen and (max-width: 767px) {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -301,6 +301,8 @@
     display: none;
 
     text-align: center;
+
+    outline: 1px solid tomato;
 
     &.is-open {
       transform: translateY(0);

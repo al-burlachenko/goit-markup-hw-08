@@ -205,6 +205,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   padding: 60px 15px;
+  outline: 1px solid aqua;
 }
 
 @media screen and (min-width: 480px) {
@@ -932,7 +933,7 @@ img {
 @media screen and (max-width: 767px) {
   .header__mobile-menu {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -958,6 +959,7 @@ img {
     background-color: #ffffff;
     display: none;
     text-align: center;
+    outline: 1px solid tomato;
   }
   .header__mobile-menu.is-open {
     -webkit-transform: translateY(0);
@@ -1383,7 +1385,9 @@ img {
   margin-left: 0px auto;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 118px 60px;
+  padding: 118px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1409,6 +1413,12 @@ img {
 
 .hero__title {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 
 /* MIDDLE-FIRST-PART  */

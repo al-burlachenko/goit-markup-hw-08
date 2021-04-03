@@ -9,7 +9,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  padding: 118px 60px;
+  padding: 118px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  // min-width: ;
 
   @media screen and (min-width: $tablet) {
     padding: 118px 204px;
@@ -33,6 +36,8 @@
   &__title {
     display: block;
     @extend %hero__title;
-
+    @media screen and (max-width:$pre-tablet) {
+      font-size: 26px;
+    }
   }
 }
